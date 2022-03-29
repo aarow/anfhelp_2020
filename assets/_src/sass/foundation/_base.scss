@@ -1,0 +1,59 @@
+html,
+body {
+	font-family: fira-mono, monospace;
+
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+
+	@include media-breakpoint-up(sm) {
+		font-size: 13px;
+	}
+
+	@include media-breakpoint-up(md) {
+		font-size: 14px;
+	}
+
+	@include media-breakpoint-up(lg) {
+		font-size: 16px;
+	}
+
+	@include media-breakpoint-up(xl) {
+		font-size: 18px;
+	}
+}
+
+.reading-font p {
+	font-family: ff-tisa-sans-web-pro, sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 2;
+}
+
+a,
+button {
+	@include standard-transition;
+}
+
+a:not([class*='btn']) {
+	font-weight: 600;
+	// text-decoration: underline;
+}
+
+.text-white a {
+	color: #fff;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4 {
+	font-family: program-narrow, sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	text-transform: uppercase;
+}

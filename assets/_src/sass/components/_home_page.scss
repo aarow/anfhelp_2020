@@ -1,0 +1,29 @@
+.page-banner--image {
+	height: 100vw;
+	max-height: 44vh;
+	min-height: 0 !important;
+	// @include full-background;
+
+	@media screen and (min-width: 768px) {
+		height: 33vw;
+	}
+}
+
+.home-page--row-2 {
+	min-height: 33vh !important;
+
+	> div > div {
+		min-height: auto !important;
+	}
+}
+
+// .page-banner--image {
+// 	min-height: 0 !important;
+// 	height: 100vw;
+// 	max-height: 44vh;
+// 	// @include full-background;
+
+// 	@media screen and (min-width: 768px) {
+// 		height: 33vw;
+// 	}
+// }

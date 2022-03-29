@@ -1,0 +1,43 @@
+$enable-rounded: false;
+
+$primary: #6d3500;
+
+$theme-colors: (
+	'primary': $primary,
+	'danger': #ff4136,
+);
+
+$font-size-base: 1rem;
+// $h2-font-size: 2rem;
+
+$border-radius-base: 0 !default;
+$border-radius-large: 0 !default;
+$border-radius-small: 0 !default;
+
+// $input-border-radius: $border-radius-base;
+// //** Large `.form-control` border radius
+// $input-border-radius-large: $border-radius-large;
+// //** Small `.form-control` border radius
+// $input-border-radius-small: $border-radius-small;
+
+// $btn-border-radius-base: $border-radius-base;
+// $btn-border-radius-large: $border-radius-large;
+// $btn-border-radius-small: $border-radius-small;
+
+$spacer: 1rem !default;
+$spacers: (
+	0: 0,
+) !default;
+$spacers: map-merge((
+	0: 0,
+	1: $spacer * 0.25,
+	2: $spacer * 0.5,
+	3: $spacer,
+	4: $spacer * 1.5,
+	5: $spacer * 3,
+	6: $spacer * 5,
+	7: $spacer * 6,
+	8: $spacer * 7,
+	9: $spacer * 8,
+),
+$spacers);

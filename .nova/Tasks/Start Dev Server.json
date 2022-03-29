@@ -1,0 +1,9 @@
+{
+  "actions" : {
+    "run" : {
+      "enabled" : true,
+      "script" : "#!\/bin\/sh\nnpm run start"
+    }
+  },
+  "identifier" : "EE82B1D8-E41B-4E8A-828D-3FF9DAAE881F"
+}
