@@ -1,11 +1,7 @@
-.site-nav--container {
-	transition: all 400ms;
-}
-
 .site--home-link {
-	height: 7rem;
+	height: 4rem;
 	margin: 0.25rem 0;
-	width: 7rem;
+	width: 4rem;
 
 	svg {
 		height: 100%;
@@ -13,57 +9,59 @@
 	}
 }
 
-.dark-on-light.site-nav--container {
-	.menu-panel--left--toggle {
-		background: #000;
-		color: #fff;
-	}
-
-	svg {
-		fill: #000;
-	}
-}
-
-.light-on-dark.site-nav--container {
-	.menu-panel--left--toggle {
-		background: #fff;
-		color: #000;
-	}
-
+.site-nav--container {
 	svg {
 		fill: #fff;
 	}
 }
 
-.reduce-size.site-nav--container {
-	background: #000;
+.menu-trigger {
+	appearance: none;
+	background: none;
+	border: none;
+	color: #fff;
 
-	.site--home-link {
-		height: 3rem;
-		width: 3rem;
-	}
-
-	.menu-panel--left--toggle {
-		background: #000;
-		color: #fff;
-	}
-
-	svg {
-		fill: #fff;
+	&:focus {
+		outline: none !important;
 	}
 }
 
-.menu-panel--left {
+.menu-item-list,
+.site-nav--bar {
 	transition: all 400ms;
+	background: rgba(0, 0, 0, 0.85);
+	backdrop-filter: blur(5px);
+}
 
-	a {
-		color: $white;
-		display: block;
-		font-size: 1.5rem;
-		padding: 0.5rem 0;
-	}
+.menu-item-list {
+	transform: translateX(100%);
 
-	li {
-		margin-bottom: 1rem;
+	&.active {
+		transform: translateX(0);
 	}
+}
+
+@media screen and (min-width: 768px) {
+	.menu-item-list {
+		transform: translateX(0);
+	}
+}
+
+.site-nav > li:last-child span {
+	border-right: none !important;
+}
+
+.site-nav .menu-item {
+	position: relative;
+}
+
+.site-nav .sub-menu {
+	@extend .list-unstyled;
+	position: absolute;
+	top: 100%;
+	right: 0;
+}
+
+.site-nav .sub-menu .menu-item {
+	
 }

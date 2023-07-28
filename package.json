@@ -14,23 +14,23 @@
     },
     "image": {
       "src": "assets/_src/images",
-      "dist": "assets/images"
+      "dist": "dist/images"
     },
     "js": {
       "entry": "index.js",
       "src": "assets/_src/js",
-      "dist": "assets/js"
+      "dist": "dist/js"
     },
     "css": {
       "src": "assets/_src/sass",
-      "dist": "assets/css",
+      "dist": "dist/css",
       "style": "compressed",
       "map": "--map"
     }
   },
   "scripts": {
-    "start": "webpack-dev-server --mode=development  --config=webpack.config.js",
-    "bs": "webpack --watch --mode=development",
+    "start-old": "webpack-dev-server --mode=development  --config=webpack.config.js",
+    "start": "webpack --watch --mode=development",
     "build": "webpack --mode=production",
     "webpack:build": "webpack --mode production",
     "dev": "npm-run-all -p imagemin sass webpack -p browser watch",

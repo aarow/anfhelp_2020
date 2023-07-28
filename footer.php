@@ -7,7 +7,7 @@
 
 		<footer class="footer  border-top py-5">
 			<div class="container-fluid">
-				<p class="copyright">© 2020 Alexander Neville Foundation</p>
+				<p class="copyright">© 2023 Alexander Neville Foundation</p>
 			</div>
 		</footer>
 
