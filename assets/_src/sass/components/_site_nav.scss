@@ -49,6 +49,11 @@
 
 .site-nav .menu-item {
 	position: relative;
+	
+	a {
+		font-weight: 400;
+		white-space: nowrap;
+	}
 }
 
 .site-nav .sub-menu {
@@ -60,13 +65,11 @@
 		right: 0;
 		text-align: right;
 		top: 100%;
+		backdrop-filter: blur(5px);
+		background: rgba(0, 0, 0, 0.85);
 	}
 }
 
 .site-nav > .menu-item:hover .sub-menu {
 	display: block;
-}
-
-.site-nav a {
-	font-weight: 400;
 }
